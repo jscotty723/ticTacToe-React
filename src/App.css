@@ -1,0 +1,194 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+@font-face {
+	font-family: "Chalkduster";
+	src: local("Chalkduster"), url(./Chalkduster.ttf) format(ttf);
+}
+
+.allContent {
+	background-image: url("./chalkboard.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: rgba(255,255,255, 0.8);
+	font-family: Chalkduster;
+	padding-left: 40px;
+	padding-right: 40px;
+}
+
+.pageDiv {
+	display: flex;
+	flex-direction: row;
+}
+
+.rightSide {
+	width: 30vw;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.leftSide {
+	width: 55vw;
+	display: flex;
+	flex-direction: column;
+	align-content: flex-start;
+	}
+
+/* header */
+header {
+	display: flex;
+	flex-direction: column;
+	padding-top: 50px;
+}
+
+h1 {
+	text-align: center;
+	padding-top: 20px;
+	margin-bottom: 10px;
+	font-size: 42px;
+}
+
+h3 {
+	padding-left: 50px;
+	font-size: 28px;
+	margin-bottom: 50px;
+}
+
+/*  color picker */
+.colorPicker {
+	display: flex;
+	justify-content: flex-start;
+	margin-bottom: 50px;
+}
+
+.sideRow {
+	font-size: 1.5em;
+	margin-right: 100px;
+	margin-left: 50px;
+}
+
+.Chalk {
+	display: flex;
+}
+
+.chalkRows {
+	display: flex;
+	/* justify-content: center; */
+}
+
+.chalkRowsLeft {
+	display: flex;
+	/* justify-content: flex-end; */
+}
+
+.lightBlue {
+	background-image: url("./chalkBlue.png");
+	background-size: 40px 40px;
+	height: 40px;
+	width:40px;
+	background-repeat: no-repeat;
+}
+.pink {
+	background-image: url("./chalkPink.png");
+	background-size: 40px 40px;
+	height: 40px;
+	width:40px;
+	background-repeat: no-repeat;
+}
+.white {
+	background-image: url("./chalkWhite.png");
+	background-size: 40px 40px;
+	height: 40px;
+	width:40px;
+	background-repeat: no-repeat;
+}
+.green {
+	background-image: url("./chalkGreen.png");
+	background-size: 40px 40px;
+	height: 40px;
+	width:40px;
+	background-repeat: no-repeat;
+}
+.yellow {
+	background-image: url("./chalkYellow.png");
+	background-size: 40px 40px;
+	height: 40px;
+	width:40px;
+	background-repeat: no-repeat;
+}
+
+/* info bubble */
+footer {
+	display: flex;
+	flex-direction: column;
+}
+
+.gameOutcome {
+	height: 20vh;
+	width: 35vh;
+	color: black;
+	font-size: 30px;
+}
+
+.status {
+	display: flex;
+}
+
+.bubble {
+	background-image: url("./bubble.png");
+	background-position: center;
+	background-size: 420px 150px;
+	background-repeat: no-repeat;
+	margin-left: 120px;
+	color: black;
+	height: 150px;
+	width: 420px;
+	text-align: center;
+	padding-top: 110px;
+}
+
+.infoBar {
+	display: flex;
+}
+
+/* gameboard  */
+.gameBoard {
+	margin-top: 50px;
+	margin-bottom: 30px;
+	display: flex;
+	min-width: 300px;
+	min-height: 300px;
+}
+
+.boxes {
+	height: 170px;
+	width: 170px;
+	text-align: center;
+	font-size: 150px;
+	font-family: Chalkduster;
+}
+
+.middleRow {
+	border-top: 5px white solid;
+	border-bottom: 5px white solid
+}
+
+.middleColumn {
+	border-left: 5px white solid;
+	border-right: 5px white solid
+}
+
+
+/* playagain button */
+.playAgain {
+	margin-bottom: 130px;
+	border: 5px dashed red;
+	font-size:0.8em;
+	font-family: Chalkduster;
+	background-color: rgba(265,265,265,0);
+	color: white;
+	padding: 1vh;
+}
